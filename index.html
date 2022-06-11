@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="css/bulma.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <title>ソートアルゴリズム.</title>
+  <meta name="author" content="Kinachan0725">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <div class="container custom-container">
+    <div class="columns">
+      <div class="column is-full">
+        <div class="is-size-1">
+          ソートアルゴリズム
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-full">
+        <div class="is-size-2">バブルソート</div>
+      </div>
+    </div>
+    <div class="columns max-width bubble-sort-area">
+
+    </div>
+    <div class="columns">
+      <div id="message" class="message is-size-3"></div>
+      <div id="performance" class="performance is-size-3"></div>
+    </div>
+
+
+    <section class="bubble-sort-section">
+      <div class="columns">
+        <div class="column is-full">
+          <div class="is-size-4">設定</div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column is-one-fifth">
+          <label>配列の要素数</label>
+          <input id="maxBarCount" class="input" type="number" min="1" step="1" placeholder="配列の要素数" value="12">
+          <p id="maxBarCountError"class="is-hide help is-danger">整数値を入力すると動きます。</p>
+        </div>
+        <div class="column is-one-fifth">
+          <label>バーの最大高さ</label>
+          <input id="maxMeasureCount" class="input" type="number" min="1" step="1" placeholder="バーの最大高さ" value="12">
+          <p id="maxMeasureCountError"class="is-hide help is-danger">整数値を入力すると動きます。</p>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-one-fifth">
+          <button id="executeBubbleSort" class="button is-primary is-light">BubbleSort</button>
+        </div>
+        <div class="column is-one-fifth">
+          <button id="resetBubbleSort" class="button is-danger is-light">Reset</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/index.js"></script>
+</body>
